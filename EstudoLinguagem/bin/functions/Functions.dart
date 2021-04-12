@@ -4,6 +4,7 @@
   https://dart.dev/guides/language/language-tour#functions
  */
 
+
 void main(List<String> arguments) {
   var res = isEqualFunction(5, 6);
   print(res);
@@ -32,7 +33,6 @@ void main(List<String> arguments) {
 
 
   usingClosure(index: 5, completion: completion);
-
 }
 
 bool isEqualFunction(num1, num2) => num1 == num2;
