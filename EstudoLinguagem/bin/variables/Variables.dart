@@ -120,6 +120,19 @@ void main(List<String> arguments) {
   print('Values   ${dic.values}');
   print('Tamanho  ${dic.length}');
 
+  var scores = <String, int>{'Bob': 36};
+
+  for (var key in ['Bob', 'Rohan', 'Sophena']) {
+    scores.putIfAbsent(key, () => key.length); // Busca para confirmar se existe a key, caso tenha add o {key:value}
+  }
+  scores['Bob'];
+  assert(scores['Bob'] == 36);
+
+  scores['Rohan'];
+  assert(scores['Rohan'] == 'Rohan'.length);
+
+  scores['Sophena'];
+  assert(scores['Sophena'] == 'Sophena'.length);
 
 }
 
