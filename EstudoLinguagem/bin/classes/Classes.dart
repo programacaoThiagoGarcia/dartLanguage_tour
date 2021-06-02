@@ -4,7 +4,6 @@
     https://dart.dev/guides/language/language-tour#classes
 
  */
-
 import 'Inherited.dart';
 import 'Interfaces.dart';
 import 'Mixins.dart';
@@ -13,6 +12,7 @@ import 'Point.dart';
 import 'Profile.dart';
 import 'Rectangle.dart';
 import 'Vector.dart';
+import 'package:lib_dart/lib_dart.dart' as lib;
 
 
 void main() {
@@ -95,6 +95,9 @@ void main() {
 
   var maestro = Maestro('nome', false, true);
   maestro.skills();
+
+var msg = lib.StringManipulator().upperCase('msg');
+assert(msg == 'msg'.toUpperCase());
 
 }
 
